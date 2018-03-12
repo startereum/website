@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Header} from './components/header';
 import {FirstFold} from './components/FirstFold';
 import {Slides} from './components/Slides';
+import {StrDesc} from './components/StrDesc';
+
 class App extends Component {
   render () {
     return (
@@ -9,6 +11,7 @@ class App extends Component {
         <Header />
         <FirstFold />
         <Slides />
+        <StrDesc />
       </div>
     );
   }

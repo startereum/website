@@ -51,6 +51,32 @@ class Slides extends Component {
             </Row>
           </Cont>
         </Section>
+        <Section >
+          <Cont>
+            <Row>
+              <Col s='12' m='6'>
+                <Img src={Slide2Image} />
+              </Col>
+              <Col s='12' m='6'>
+                <H2 variant='slideHeading' >{data.slides[3].heading[0]}</H2>
+                <P>{data.slides[3].description[0]}</P><br />
+              </Col>
+            </Row>
+          </Cont>
+        </Section>
+        <Section variant='light'>
+          <Cont>
+            <Row>
+              <Col s='12' m='6'>
+                <H2 variant='slideHeading' >{data.slides[4].heading[0]}</H2>
+                <P>{data.slides[4].description[0]}</P><br />
+              </Col>
+              <Col s='12' m='6'>
+                <Img src={Slide3Image} />
+              </Col>
+            </Row>
+          </Cont>
+        </Section>
       </div>
     );
   }

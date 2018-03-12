@@ -19,7 +19,7 @@ class FirstFold extends Component {
           <Row>
             <Col s='12' m='6'>
               <H1 variant='bigheading' >{data.banner.heading}</H1>
-              <P>{data.banner.subheading}</P>
+              <P variant='heavy'>{data.banner.subheading}</P>
             </Col>
           </Row>
           <Row>

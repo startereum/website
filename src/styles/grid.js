@@ -27,7 +27,8 @@ const Col = glamorous.div({
 },
 (props) => {
   return {
-    textAlign: (props.align === 'center') ? 'center' : 'left'
+    textAlign: (props.align === 'center') ? 'center' : 'left',
+    paddingTop: (props.Pt) ? props.Pt : 0
   };
 },
 (props) => {

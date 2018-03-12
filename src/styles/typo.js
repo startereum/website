@@ -24,6 +24,9 @@ const H1 = glamorous.h1({
 const H2 = glamorous.h2({
   fontWeight: 500
 },
+(props) => ({
+  textAlign: props.align === 'center' ? 'center' : 'left'
+}),
 (props) => {
   return {
     [Config.media.phone]: {
@@ -33,7 +36,7 @@ const H2 = glamorous.h2({
     },
     [Config.media.screen]: {
       lineHeight: '1.05',
-      margin: (props.variant === 'bigheading') ? '10px 0 20px' : ((props.variant === 'slideHeading') ? '90px 0 20px' : '0'),
+      margin: (props.variant === 'bigheading') ? '20px 0 30px' : ((props.variant === 'slideHeading') ? '90px 0 20px' : '0'),
       fontSize: Config.fontSizes.h2.screen
     }
   };
@@ -78,9 +81,11 @@ const H4 = glamorous.h4({
 );
 
 const P = glamorous.p({
-  fontWeight: 500,
   margin: 0
 },
+(props) => ({
+  fontWeight: (props.variant === 'heavy') ? 500 : 300
+}),
 (props) => {
   return {
     [Config.media.phone]: {

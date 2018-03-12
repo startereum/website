@@ -36,9 +36,25 @@ const data = {
       description:
       ['Teams can use the platform to discover high quality technical consultants and strategic advisors from all around the world.'],
       image: '../assets/placeholder.jpeg'
+    },
+    {
+      heading: ['Thousands of Hands Ready to Help'],
+      description:
+      ['Discover your early users, supporters, and token buyers from among the thousands of members on the Startereum platform.'],
+      image: '../assets/placeholder.jpeg'
+    },
+    {
+      heading: ['Follow On Funding by Member Investors'],
+      description: ['Teams that win the support and confidence of the community can then achieve seed funding or token pre sales from an in-house network of member investors.'],
+      image: '../assets/placeholder.jpeg'
     }
 
-  ]
+  ],
+  strDescription: {
+    heading: 'Startereum Token (STR)',
+    description: 'About Startereum Token. Startereum token allows community to participate in creating, curating and funding new startup projects. It also serves as the voting token to guide the evolution of the startereum protocol.',
+    image: '../assets/coin.png'
+  }
 };
 
 export {data};
