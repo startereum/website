@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import {Header, Logo} from './styles/components.js';
-import {Cont, Row} from './styles/grid.js';
+import {Header} from './components/header';
+import {FirstFold} from './components/FirstFold';
+import {Slides} from './components/Slides';
 class App extends Component {
   render () {
     return (
       <div className='App'>
-        <Cont>
-          <Header>
-            <Logo />
-          </Header>
-        </Cont>
+        <Header />
+        <FirstFold />
+        <Slides />
       </div>
     );
   }

@@ -1,13 +1,14 @@
 import glamorous from 'glamorous';
+import {Config} from './variables';
 
-const Header = glamorous.div({
+const SHeader = glamorous.div({
   background: '#fff',
   maxHeight: 70,
   overflow: 'hidden'
 
 });
 
-const Logo = glamorous.div({
+const SLogo = glamorous.div({
   height: 70,
   width: 100,
   float: 'left',
@@ -16,10 +17,14 @@ const Logo = glamorous.div({
   '::after': {
     content: 'logo',
     fontWeight: 600,
-    lineHeight: 70,
-    color: '#222',
+    lineHeight: '70px',
+    color: Config.colors['black-1'],
     fontSize: 42
   }
 });
 
-export {Header, Logo};
+const Img = glamorous.img({
+  width: '100%'
+});
+
+export {SHeader, SLogo, Img};
