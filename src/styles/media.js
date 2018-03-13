@@ -3,7 +3,19 @@ import {Config} from './variables';
 
 const Img = glamorous.img({
   width: '100%'
-});
+},
+(props) => ({
+  [Config.media.phone]: {
+    display: (props.type === 'mobile') ? 'block' : ((props.type === 'tab-screen') ? 'none' : 'initial')
+  },
+  [Config.media.tab]: {
+    display: (props.type === 'mobile') ? 'none' : 'block'
+  },
+  [Config.media.screen]: {
+    display: (props.type === 'mobile') ? 'none' : 'block'
+  }
+})
+);
 
 const Card = glamorous.div({
   float: 'left',

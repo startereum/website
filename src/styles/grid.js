@@ -24,7 +24,6 @@ const Row = glamorous.div({
 );
 
 const Col = glamorous.div({
-  float: 'left',
   minHeight: 1,
   paddingLeft: Config.gridGutter,
   paddingRight: Config.gridGutter
@@ -32,7 +31,8 @@ const Col = glamorous.div({
 (props) => {
   return {
     textAlign: (props.align === 'center') ? 'center' : 'left',
-    paddingTop: (props.Pt) ? props.Pt : 0
+    paddingTop: (props.Pt) ? props.Pt : 0,
+    float: (props.variant === 'rightFloat') ? 'right' : 'left'
   };
 },
 (props) => {

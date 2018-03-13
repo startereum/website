@@ -90,20 +90,20 @@ const P = glamorous.p({
   return {
     [Config.media.phone]: {
       lineHeight: '1.25',
-      fontSize: '1rem'
+      fontSize: '1rem',
+      marginTop: (props.variant === 'newsbox') ? '20px' : '0',
+      marginLeft: (props.variant === 'newsbox') ? '0px' : '0',
+      paddingLeft: (props.variant === 'newsbox') ? '20px' : '0',
+      borderLeft: (props.variant === 'newsbox') ? 'thin solid ' + Config.colors.primaryBorder : '0'
     },
     [Config.media.tab]: {
       lineHeight: '1.375',
-      fontSize: '1rem'
+      fontSize: '1rem',
+      marginTop: (props.variant === 'newsbox') ? '20px' : '0',
+      marginLeft: (props.variant === 'newsbox') ? '-30px' : '0',
+      paddingLeft: (props.variant === 'newsbox') ? '30px' : '0',
+      borderLeft: (props.variant === 'newsbox') ? 'thin solid ' + Config.colors.primaryBorder : '0'
     }
-  };
-},
-(props) => {
-  return {
-    marginTop: (props.variant === 'newsbox') ? '20px' : '0',
-    marginLeft: (props.variant === 'newsbox') ? '-30px' : '0',
-    paddingLeft: (props.variant === 'newsbox') ? '30px' : '0',
-    borderLeft: (props.variant === 'newsbox') ? 'thin solid ' + Config.colors.primaryBorder : '0'
   };
 }
 );

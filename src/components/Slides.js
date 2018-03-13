@@ -12,13 +12,13 @@ class Slides extends Component {
         <Section variant='light'>
           <Cont>
             <Row>
+              <Col s='12' m='6' variant='rightFloat'>
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide1.jpeg`} />
+              </Col>
               <Col s='12' m='6'>
                 <H2 variant='slideHeading' >{data.slides[0].heading}</H2>
                 <P>{data.slides[0].description}</P>
                 <P>{data.slides[0].description[1]}</P>
-              </Col>
-              <Col s='12' m='6'>
-                <Img src={`${process.env.PUBLIC_URL}/assets/slide1.jpeg`} />
               </Col>
             </Row>
           </Cont>
@@ -39,12 +39,12 @@ class Slides extends Component {
         <Section variant='light'>
           <Cont>
             <Row>
+              <Col s='12' m='6' variant='rightFloat'>
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide3.jpg`} />
+              </Col>
               <Col s='12' m='6'>
                 <H2 variant='slideHeading' >{data.slides[2].heading}</H2>
                 <P>{data.slides[2].description[0]}</P><br />
-              </Col>
-              <Col s='12' m='6'>
-                <Img src={`${process.env.PUBLIC_URL}/assets/slide2.jpg`} />
               </Col>
             </Row>
           </Cont>
@@ -65,12 +65,12 @@ class Slides extends Component {
         <Section variant='light'>
           <Cont>
             <Row>
+              <Col s='12' m='6' variant='rightFloat'>
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide5.jpg`} />
+              </Col>
               <Col s='12' m='6'>
                 <H2 variant='slideHeading' >{data.slides[4].heading}</H2>
                 <P>{data.slides[4].description[0]}</P><br />
-              </Col>
-              <Col s='12' m='6'>
-                <Img src={`${process.env.PUBLIC_URL}/assets/slide1.jpeg`} />
               </Col>
             </Row>
           </Cont>
