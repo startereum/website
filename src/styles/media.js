@@ -1,5 +1,5 @@
 import glamorous from 'glamorous';
-import {Config} from './variables'
+import {Config} from './variables';
 
 const Img = glamorous.img({
   width: '100%'
@@ -13,7 +13,7 @@ const Card = glamorous.div({
   position: 'relative',
   border: 'thin solid ' + Config.colors.primaryBorder,
   transition: 'background 0.3s linear',
-  borderRadius: Config.borderRadius.sm,
+  borderRadius: Config.borderRadius.md,
   ':before': {
     content: '""',
     position: 'absolute',
@@ -53,6 +53,8 @@ const Card = glamorous.div({
   ':hover': {
     background: Config.colors.bgLight,
     transition: 'background 0.3s linear',
+    borderRadius: 0,
+    boxShadow: '0px 0px 9px ' + Config.colors.primaryBorder,
     ':before': {
       height: '90%',
       top: '4%',

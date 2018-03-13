@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {SHeader, SLogo} from '../styles/header.js';
+import {SHeader, SLogo} from '../styles/pageStyles.js';
 import {Cont, Row, Col} from '../styles/grid.js';
 
 class Header extends Component {

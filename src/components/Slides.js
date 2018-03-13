@@ -3,14 +3,12 @@ import {Cont, Row, Col, Section} from '../styles/grid.js';
 import {H2, P} from '../styles/typo';
 import {Img} from '../styles/media';
 import {data} from '../content/data';
+import {SlideWrap} from '../styles/pageStyles';
 
 class Slides extends Component {
   render () {
-    const Slide1Image = require('../assets/placeholder.jpeg');
-    const Slide2Image = require('../assets/placeholder.jpeg');
-    const Slide3Image = require('../assets/placeholder.jpeg');
     return (
-      <div>
+      <SlideWrap>
         <Section variant='light'>
           <Cont>
             <Row>
@@ -20,7 +18,7 @@ class Slides extends Component {
                 <P>{data.slides[0].description[1]}</P>
               </Col>
               <Col s='12' m='6'>
-                <Img src={Slide1Image} />
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide1.jpeg`} />
               </Col>
             </Row>
           </Cont>
@@ -29,7 +27,7 @@ class Slides extends Component {
           <Cont>
             <Row>
               <Col s='12' m='6'>
-                <Img src={Slide2Image} />
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide2.jpg`} />
               </Col>
               <Col s='12' m='6'>
                 <H2 variant='slideHeading' >{data.slides[1].heading}</H2>
@@ -46,7 +44,7 @@ class Slides extends Component {
                 <P>{data.slides[2].description[0]}</P><br />
               </Col>
               <Col s='12' m='6'>
-                <Img src={Slide3Image} />
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide2.jpg`} />
               </Col>
             </Row>
           </Cont>
@@ -55,7 +53,7 @@ class Slides extends Component {
           <Cont>
             <Row>
               <Col s='12' m='6'>
-                <Img src={Slide2Image} />
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide4.jpg`} />
               </Col>
               <Col s='12' m='6'>
                 <H2 variant='slideHeading' >{data.slides[3].heading}</H2>
@@ -72,12 +70,12 @@ class Slides extends Component {
                 <P>{data.slides[4].description[0]}</P><br />
               </Col>
               <Col s='12' m='6'>
-                <Img src={Slide3Image} />
+                <Img src={`${process.env.PUBLIC_URL}/assets/slide1.jpeg`} />
               </Col>
             </Row>
           </Cont>
         </Section>
-      </div>
+      </SlideWrap>
     );
   }
 }

@@ -19,7 +19,7 @@ const Row = glamorous.div({
   }
 },
 (props) => ({
-  background: (props.variant === 'light') ? Config.colors.bgLight : Config.colors.bgWhite
+  background: (props.variant === 'light') ? Config.colors.bgLight : 'initial'
 })
 );
 
@@ -62,10 +62,7 @@ const Col = glamorous.div({
 const Section = glamorous.section({
   width: '100%',
   paddingTop: 80,
-  paddingBottom: 80,
-  ':first-of-type': {
-    paddingTop: 0
-  }
+  paddingBottom: 80
 },
 (props) => ({
   background: (props.variant === 'light') ? Config.colors.bgLight : Config.colors.bgWhite,
