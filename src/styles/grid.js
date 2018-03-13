@@ -17,7 +17,11 @@ const Row = glamorous.div({
     display: 'table',
     clear: 'both'
   }
-});
+},
+(props) => ({
+  background: (props.variant === 'light') ? Config.colors.bgLight : Config.colors.bgWhite
+})
+);
 
 const Col = glamorous.div({
   float: 'left',

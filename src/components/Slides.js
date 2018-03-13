@@ -15,8 +15,8 @@ class Slides extends Component {
           <Cont>
             <Row>
               <Col s='12' m='6'>
-                <H2 variant='slideHeading' >{data.slides[0].heading[0]}<br />{data.slides[0].heading[1]}</H2>
-                <P>{data.slides[0].description[0]}</P><br />
+                <H2 variant='slideHeading' >{data.slides[0].heading}</H2>
+                <P>{data.slides[0].description}</P>
                 <P>{data.slides[0].description[1]}</P>
               </Col>
               <Col s='12' m='6'>
@@ -32,7 +32,7 @@ class Slides extends Component {
                 <Img src={Slide2Image} />
               </Col>
               <Col s='12' m='6'>
-                <H2 variant='slideHeading' >{data.slides[1].heading[0]}</H2>
+                <H2 variant='slideHeading' >{data.slides[1].heading}</H2>
                 <P>{data.slides[1].description[0]}</P><br />
               </Col>
             </Row>
@@ -42,7 +42,7 @@ class Slides extends Component {
           <Cont>
             <Row>
               <Col s='12' m='6'>
-                <H2 variant='slideHeading' >{data.slides[2].heading[0]}</H2>
+                <H2 variant='slideHeading' >{data.slides[2].heading}</H2>
                 <P>{data.slides[2].description[0]}</P><br />
               </Col>
               <Col s='12' m='6'>
@@ -58,7 +58,7 @@ class Slides extends Component {
                 <Img src={Slide2Image} />
               </Col>
               <Col s='12' m='6'>
-                <H2 variant='slideHeading' >{data.slides[3].heading[0]}</H2>
+                <H2 variant='slideHeading' >{data.slides[3].heading}</H2>
                 <P>{data.slides[3].description[0]}</P><br />
               </Col>
             </Row>
@@ -68,7 +68,7 @@ class Slides extends Component {
           <Cont>
             <Row>
               <Col s='12' m='6'>
-                <H2 variant='slideHeading' >{data.slides[4].heading[0]}</H2>
+                <H2 variant='slideHeading' >{data.slides[4].heading}</H2>
                 <P>{data.slides[4].description[0]}</P><br />
               </Col>
               <Col s='12' m='6'>
