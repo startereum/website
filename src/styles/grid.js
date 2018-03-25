@@ -1,5 +1,5 @@
-import glamorous from 'glamorous';
-import {Config} from './variables';
+import glamorous from 'glamorous'
+import {Config} from './variables'
 
 const Cont = glamorous.div({
   maxWidth: 1180,
@@ -7,7 +7,7 @@ const Cont = glamorous.div({
   margin: '0 auto',
   paddingLeft: Config.gridGutter,
   paddingRight: Config.gridGutter
-});
+})
 
 const Row = glamorous.div({
   marginRight: -Config.gridGutter,
@@ -19,9 +19,9 @@ const Row = glamorous.div({
   }
 },
 (props) => ({
-  background: (props.variant === 'light') ? Config.colors.bgLight : 'initial'
+  backgroundColor: (props.variant === 'light') ? Config.colors.bgLight : 'initial'
 })
-);
+)
 
 const Col = glamorous.div({
   minHeight: 1,
@@ -33,15 +33,15 @@ const Col = glamorous.div({
     textAlign: (props.align === 'center') ? 'center' : 'left',
     paddingTop: (props.Pt) ? props.Pt : 0,
     float: (props.variant === 'rightFloat') ? 'right' : 'left'
-  };
+  }
 },
 (props) => {
-  props.s = (props.s) ? props.s : Config.gridSize;
-  props.m = (props.m) ? props.m : props.s;
-  props.l = (props.l) ? props.l : props.m;
-  props.offsetS = (props.offsetS) ? props.offsetS : 0;
-  props.offsetM = (props.offsetM) ? props.offsetM : props.offsetS;
-  props.offsetL = (props.offsetL) ? props.offsetL : props.offsetM;
+  props.s = (props.s) ? props.s : Config.gridSize
+  props.m = (props.m) ? props.m : props.s
+  props.l = (props.l) ? props.l : props.m
+  props.offsetS = (props.offsetS) ? props.offsetS : 0
+  props.offsetM = (props.offsetM) ? props.offsetM : props.offsetS
+  props.offsetL = (props.offsetL) ? props.offsetL : props.offsetM
   return {
     [Config.media.phone]: {
       width: props.s ? 100 / (Config.gridSize / props.s) + '%' : '100%',
@@ -55,9 +55,9 @@ const Col = glamorous.div({
       width: props.l ? 100 / (Config.gridSize / props.l) + '%' : '100%',
       marginLeft: props.offsetL ? 100 / (Config.gridSize / props.offsetL) + '%' : '0'
     }
-  };
+  }
 }
-);
+)
 
 const Section = glamorous.section({
   width: '100%',
@@ -69,6 +69,6 @@ const Section = glamorous.section({
   borderTop: (props.variant === 'light') ? 'thin solid ' + Config.colors.sectionBorder : '0',
   borderBottom: (props.variant === 'light') ? 'thin solid ' + Config.colors.sectionBorder : '0'
 })
-);
+)
 
-export {Row, Cont, Col, Section};
+export {Row, Cont, Col, Section}

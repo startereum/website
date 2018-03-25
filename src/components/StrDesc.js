@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import {Cont, Row, Col, Section} from '../styles/grid.js';
-import {H2, P} from '../styles/typo';
-import {Img} from '../styles/media';
-import {data} from '../content/data';
-import {FeatureCards} from './FeatureCards';
+import React, { Component } from 'react'
+import {Cont, Row, Col, Section} from '../styles/grid.js'
+import {H2, P} from '../styles/typo'
+import {Img} from '../styles/media'
+import {data} from '../content/data'
+import {FeatureCards} from './FeatureCards'
 
 class StrDesc extends Component {
   render () {
@@ -22,8 +22,8 @@ class StrDesc extends Component {
           </Row>
         </Cont>
       </Section>
-    );
+    )
   }
 }
 
-export {StrDesc};
+export {StrDesc}

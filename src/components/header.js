@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import {SHeader, SLogo} from '../styles/pageStyles.js';
-import {Cont, Row, Col} from '../styles/grid.js';
+import React, { Component } from 'react'
+import {SHeader, SLogo} from '../styles/pageStyles.js'
+import {Cont, Row, Col} from '../styles/grid.js'
 
 class Header extends Component {
   render () {
@@ -14,8 +14,8 @@ class Header extends Component {
           </Row>
         </SHeader>
       </Cont>
-    );
+    )
   }
 }
 
-export {Header};
+export {Header}

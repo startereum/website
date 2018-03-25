@@ -1,5 +1,5 @@
-import glamorous from 'glamorous';
-import {Config} from './variables';
+import glamorous from 'glamorous'
+import {Config} from './variables'
 
 const Img = glamorous.img({
   width: '100%'
@@ -15,7 +15,7 @@ const Img = glamorous.img({
     display: (props.type === 'mobile') ? 'none' : 'block'
   }
 })
-);
+)
 
 const Card = glamorous.div({
   float: 'left',
@@ -93,11 +93,20 @@ const Card = glamorous.div({
   [Config.media.screen]: {
     width: '18%'
   }
-});
+})
 
 const CardsWrapper = glamorous.div({
   marginTop: 30,
   padding: '0 15px'
-});
+})
 
-export {Img, Card, CardsWrapper};
+const Space = glamorous.div(
+  (props) => ({
+    marginLeft: (props.ml) ? props.ml : 0,
+    marginRight: (props.mr) ? props.mr : 0,
+    marginTop: (props.mt) ? props.mt : 0,
+    marginBottom: (props.mb) ? props.mb : 0
+  })
+)
+
+export {Img, Card, CardsWrapper, Space}

@@ -1,5 +1,5 @@
-import glamorous from 'glamorous';
-import {Config} from './variables';
+import glamorous from 'glamorous'
+import {Config} from './variables'
 
 const Button = glamorous.a({
   fontWeight: 500,
@@ -18,8 +18,8 @@ const Button = glamorous.a({
     color: (props.type === 'primary') ? Config.colors.white : Config.colors.primary,
     background: (props.type === 'primary') ? Config.colors.primary : Config.colors.white,
     borderColor: (props.type === 'primary') ? 'transparent' : Config.colors.primary
-  };
+  }
 }
-);
+)
 
-export {Button};
+export {Button}
