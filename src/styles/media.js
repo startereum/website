@@ -102,10 +102,24 @@ const CardsWrapper = glamorous.div({
 
 const Space = glamorous.div(
   (props) => ({
-    marginLeft: (props.ml) ? props.ml : 0,
-    marginRight: (props.mr) ? props.mr : 0,
-    marginTop: (props.mt) ? props.mt : 0,
-    marginBottom: (props.mb) ? props.mb : 0
+    [Config.media.phone]: {
+      marginLeft: (props.mlS) ? props.mlS : 0,
+      marginRight: (props.mrS) ? props.mrS : 0,
+      marginTop: (props.mtS) ? props.mtS : 0,
+      marginBottom: (props.mbS) ? props.mbS : 0
+    },
+    [Config.media.tab]: {
+      marginLeft: (props.mlM) ? props.mlM : 0,
+      marginRight: (props.mrM) ? props.mrM : 0,
+      marginTop: (props.mtM) ? props.mtM : 0,
+      marginBottom: (props.mbM) ? props.mbM : 0
+    },
+    [Config.media.screen]: {
+      marginLeft: (props.mlL) ? props.mlL : 0,
+      marginRight: (props.mrL) ? props.mrL : 0,
+      marginTop: (props.mtL) ? props.mtL : 0,
+      marginBottom: (props.mbL) ? props.mbL : 0
+    }
   })
 )
 

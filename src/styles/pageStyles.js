@@ -28,9 +28,7 @@ const SlideWrap = glamorous.div({
 const FirstFoldBg = glamorous.div({
   marginRight: -Config.gridGutter,
   marginLeft: -Config.gridGutter,
-  backgroundSize: '75% 100%',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'right',
   ':after': {
     content: '""',
     display: 'table',
@@ -38,8 +36,17 @@ const FirstFoldBg = glamorous.div({
   }
 },
 (props) => ({
-  backgroundImage: props.bg ? `url(${props.bg})` : ''
-}
-))
+  backgroundImage: props.bg ? `url(${props.bg})` : '',
+  [Config.media.phone]: {
+    backgroundPosition: 'top',
+    backgroundSize: '100% 250px'
+  },
+  [Config.media.screen]: {
+    backgroundPosition: 'right',
+    backgroundSize: '75% 100%'
+  }
+
+})
+)
 
 export {SHeader, SLogo, Img, SlideWrap, FirstFoldBg}

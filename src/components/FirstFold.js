@@ -12,11 +12,11 @@ class FirstFold extends Component {
       <Cont>
         <FirstFoldBg bg={`${process.env.PUBLIC_URL}/assets/mainIllustration.svg`}>
           <Col s='12' m='5'>
-            <Space mt='250'>
+            <Space mtS='250'>
               <H1 variant='bigheading' >{data.banner.heading}</H1>
               <P variant='heavy'>{data.banner.subheading}</P>
             </Space>
-            <Space mt='100' mb='80'>
+            <Space mtL='100' mbL='80' mtS='50' mbS='-30'>
               <Button type='primary' href={data.banner.button.whitepaper.href}>{data.banner.button.whitepaper.label}</Button>
               <Button href={data.banner.button.telegram.href}>{data.banner.button.telegram.label}</Button>
             </Space>
