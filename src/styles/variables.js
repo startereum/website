@@ -14,7 +14,7 @@ const Config = {
     primary: 'rgba(0,123,255,1)',
     primaryBorder: 'rgba(0,123,255,0.2)',
     sectionBorder: 'rgba(0,123,255,0.1)',
-    bgLight: 'rgba(0,123,255,0.02)',
+    bgLight: '#fafafa',
     bgWhite: '#ffffff'
   },
   fontSizes:

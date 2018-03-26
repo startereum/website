@@ -12,7 +12,7 @@ class StrDesc extends Component {
         <Cont>
           <Row>
             <Col s='2' offsetS='5'>
-              <Img src={`${process.env.PUBLIC_URL}/assets/coin.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/coin.svg`} />
             </Col>
             <Col s='12' m='8' offsetM='2'>
               <H2 variant='bigheading' align='center'>{data.strDescription.heading}</H2>

@@ -3,6 +3,7 @@ import {Header} from './components/header';
 import {FirstFold} from './components/FirstFold';
 import {Slides} from './components/Slides';
 import {StrDesc} from './components/StrDesc';
+import {Team} from './components/Team';
 
 class App extends Component {
   render () {
@@ -12,6 +13,7 @@ class App extends Component {
         <FirstFold />
         <Slides />
         <StrDesc />
+        <Team />
       </div>
     );
   }

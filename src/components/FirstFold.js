@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import {Cont, Col} from '../styles/grid.js'
-import {H1, P} from '../styles/typo'
-import {Button} from '../styles/form'
-import {Space} from '../styles/media'
-import {FirstFoldBg} from '../styles/pageStyles.js'
-import {data} from '../content/data'
+import React, { Component } from 'react';
+import {Cont, Col} from '../styles/grid.js';
+import {H1, P} from '../styles/typo';
+import {Button} from '../styles/form';
+import {Space} from '../styles/media';
+import {FirstFoldBg} from '../styles/pageStyles.js';
+import {data} from '../content/data';
 
 class FirstFold extends Component {
   render () {
@@ -12,7 +12,7 @@ class FirstFold extends Component {
       <Cont>
         <FirstFoldBg bg={`${process.env.PUBLIC_URL}/assets/mainIllustration.svg`}>
           <Col s='12' m='5'>
-            <Space mtS='250'>
+            <Space mtS='250' mtL='250'>
               <H1 variant='bigheading' >{data.banner.heading}</H1>
               <P variant='heavy'>{data.banner.subheading}</P>
             </Space>
@@ -23,8 +23,8 @@ class FirstFold extends Component {
           </Col>
         </FirstFoldBg>
       </Cont>
-    )
+    );
   }
 }
 
-export {FirstFold}
+export {FirstFold};

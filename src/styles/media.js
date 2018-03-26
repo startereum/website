@@ -1,5 +1,5 @@
-import glamorous from 'glamorous'
-import {Config} from './variables'
+import glamorous from 'glamorous';
+import {Config} from './variables';
 
 const Img = glamorous.img({
   width: '100%'
@@ -15,90 +15,56 @@ const Img = glamorous.img({
     display: (props.type === 'mobile') ? 'none' : 'block'
   }
 })
-)
+);
 
 const Card = glamorous.div({
   float: 'left',
-  margin: '3% 1%',
-  background: Config.colors.white,
-  textAlign: 'center',
   position: 'relative',
-  border: 'thin solid ' + Config.colors.primaryBorder,
-  transition: 'background 0.3s linear',
-  borderRadius: Config.borderRadius.md,
-  ':before': {
-    content: '""',
-    position: 'absolute',
-    border: 'thin solid ' + Config.colors.primaryBorder,
-    borderTop: '0',
-    borderBottom: '0',
-    width: '90%',
-    left: '4%',
-    height: '0',
-    top: '50%',
-    transition: 'all 0.2s linear'
-  },
-  ':after': {
-    content: '""',
-    position: 'absolute',
-    border: 'thin solid ' + Config.colors.primaryBorder,
-    borderLeft: '0',
-    borderRight: '0',
-    width: '0%',
-    left: '50%',
-    height: '90%',
-    top: '4%',
-    transition: 'all 0.2s linear'
-  },
+  transition: 'all 0.3s linear',
+  textAlign: 'center',
+  height: 200,
+  letterSpacing: '0.5px',
+  fontWeight: 400,
+  zIndex: 0,
+  backgroundColor: Config.colors.bgLight,
   ' p': {
     margin: 0,
-    padding: 8,
-    fontSize: 'inherit',
-    width: '100%',
+    fontSize: 14,
+    width: '95%',
     position: 'absolute',
+    transform: 'translate(-50%,-50%)',
     top: '50%',
     left: '50%',
-    transition: 'transform 0.3s linear',
-    transformOrigin: '0 0',
-    transform: 'scale(0.95) translate(-50%,-50%)'
+    textTransform: 'uppercase'
   },
-  ':hover': {
-    background: Config.colors.bgLight,
-    transition: 'background 0.3s linear',
-    borderRadius: 0,
-    boxShadow: '0px 0px 9px ' + Config.colors.primaryBorder,
-    ':before': {
-      height: '90%',
-      top: '4%',
-      transition: 'all 0.2s linear'
-    },
-    ':after': {
-      width: '90%',
-      left: '4%',
-      transition: 'all 0.2s linear'
-    }
-  },
-  ':hover p': {
-    transform: 'scale(1) translate(-50%,-50%)',
-    transition: 'transform 0.3s linear'
-  },
+
   [Config.media.phone]: {
-    width: '100%',
-    minHeight: 120
+    width: '100%'
   },
   [Config.media.tab]: {
-    width: '18%',
-    minHeight: 150
+    width: '18%'
   },
   [Config.media.screen]: {
-    width: '18%'
+    width: '20%'
+  },
+  ':hover': {
+    backgroundColor: Config.colors.bgWhite,
+    boxShadow: '0px 1px 2px rgba(0,0,0,0.1),0px -1px 2px rgba(0,0,0,0.05)',
+    zIndex: 1,
+    transform: 'translate(0,-5px)',
+    color: Config.colors['black-1'],
+    transition: 'all 0.3s linear'
   }
-})
+});
 
-const CardsWrapper = glamorous.div({
-  marginTop: 30,
-  padding: '0 15px'
-})
+const Cards = glamorous.div({
+  backgroundColor: Config.colors.bgLight,
+  ':after': {
+    content: '""',
+    display: 'table',
+    clear: 'both'
+  }
+});
 
 const Space = glamorous.div(
   (props) => ({
@@ -121,6 +87,6 @@ const Space = glamorous.div(
       marginBottom: (props.mbL) ? props.mbL : 0
     }
   })
-)
+);
 
-export {Img, Card, CardsWrapper, Space}
+export {Img, Card, Cards, Space};
