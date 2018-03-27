@@ -100,13 +100,13 @@ const TeamList = glamorous.ul({
 const TeamListHeading = glamorous.h2({
   fontSize: Config.fontSizes.h2,
   fontWeight: 500,
-  margin: '80px 0 30px'
+  margin: '100px 0 30px'
 });
 
 const TeamMemberName = glamorous.h5({
   fontSize: 13,
   fontWeight: 500,
-  margin: '80px 0 10px'
+  margin: '50px 0 10px'
 });
 
 const TeamMemberTag = glamorous.p({
@@ -115,4 +115,21 @@ const TeamMemberTag = glamorous.p({
   margin: 0
 });
 
-export {SHeader, SLogo, Img, SlideWrap, FirstFoldBg, TeamSection, TeamList, TeamListHeading, TeamMemberName, TeamMemberTag};
+const SocialIcon = glamorous.a({
+  display: 'inline-block',
+  marginTop: 10,
+  marginRight: 5,
+  height: 32,
+  width: 32,
+  filter: 'grayscale(90%)',
+  ':hover': {
+    filter: 'grayscale(0)'
+  }
+},
+(props) => ({
+  backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${props.type}.svg)`
+
+})
+);
+
+export {SHeader, SLogo, Img, SlideWrap, FirstFoldBg, TeamSection, TeamList, TeamListHeading, TeamMemberName, TeamMemberTag, SocialIcon};

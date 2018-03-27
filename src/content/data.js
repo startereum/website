@@ -80,27 +80,27 @@ const data = {
           name: 'Dr. Aditya Dev Sood',
           designnation: 'Chairman & Founder',
           company: 'Startup Tunnel',
-          fb: '',
-          twitter: '',
-          linkedIn: '',
+          fb: 'https://www.facebook.com/adityasood',
+          twitter: 'https://twitter.com/adityadevsood',
+          linkedIn: 'https://www.linkedin.com/in/adityadevsood/',
           img: '/assets/team/aditya-dev-sood.jpg'
         },
         {
           name: 'Saurabh Arora',
           designnation: 'Founder & CEO',
           company: 'Airwoot',
-          fb: '',
-          twitter: '',
-          linkedIn: '',
+          fb: 'https://www.facebook.com/tanish2k',
+          twitter: 'https://twitter.com/tanish2k',
+          linkedIn: 'https://www.linkedin.com/in/saurabhairwoot/',
           img: '/assets/team/saurabh-arora.jpg'
         },
         {
           name: 'Sasu Ristimäki',
           designnation: 'Founder',
           company: 'SRI Capital',
-          fb: '',
-          twitter: '',
-          linkedIn: '',
+          fb: 'https://www.facebook.com/sasu.ristimaki',
+          twitter: 'https://twitter.com/SRistimaki',
+          linkedIn: 'https://www.linkedin.com/in/sasu-ristim%C3%A4ki-834b7a1/',
           img: '/assets/team/sasu.jpg'
         }
       ]
@@ -114,7 +114,7 @@ const data = {
           company: 'Blockchain Advisor',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/sunil-aggarwal-9a994726/',
           img: '/assets/team/sunil-agarwal.jpg'
         },
         {
@@ -123,7 +123,7 @@ const data = {
           company: 'EasterEgg Pte Ltd',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/sandeepsangli/',
           img: '/assets/team/sandeep-sangli.jpg'
         },
         {
@@ -132,7 +132,7 @@ const data = {
           company: 'Hashcove Limited',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/kunalnandwani/',
           img: '/assets/team/kunal-nandwani.jpg'
         },
         {
@@ -141,10 +141,9 @@ const data = {
           company: ' and Microsoft Regional Lead - MCT',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/ritesh-modi/',
           img: '/assets/team/ritesh-modi.jpg'
         }
-
       ]
     },
     {
@@ -156,7 +155,7 @@ const data = {
           company: '',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/shkartik90/',
           img: '/assets/team/kartik-sharma.jpg'
         },
         {
@@ -165,7 +164,7 @@ const data = {
           company: '',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/sangeethasruthi-s-68857490/',
           img: '/assets/team/sangeetha-sruthi.jpg'
         }
       ]
@@ -177,27 +176,27 @@ const data = {
           name: 'Vishwanathan Sahasranamam',
           designnation: 'Co-Founder & CEO FORGE',
           company: 'Innovation Accelerator',
-          fb: '',
-          twitter: '',
-          linkedIn: '',
+          fb: 'https://www.facebook.com/VishwanathIIMB',
+          twitter: 'https://twitter.com/VishwanathForge',
+          linkedIn: 'https://www.linkedin.com/in/vishwanathforge/',
           img: '/assets/team/vishwanath.jpg'
         },
         {
           name: 'Abhishek Sanghvi',
           designnation: 'Co Founder',
           company: 'Swan Angel Fund',
-          fb: '',
-          twitter: '',
-          linkedIn: '',
+          fb: 'https://www.facebook.com/abhiworld',
+          twitter: 'https://twitter.com/sheksphere',
+          linkedIn: 'https://www.linkedin.com/in/abhisheksanghvi/',
           img: '/assets/team/abhishek-sanghvi.jpg'
         },
         {
           name: 'Amit Singh',
           designnation: 'MD Headstart Network ',
           company: 'Foundation',
-          fb: '',
-          twitter: '',
-          linkedIn: '',
+          fb: 'https://www.facebook.com/abeoye',
+          twitter: 'https://twitter.com/AbeOye',
+          linkedIn: 'https://www.linkedin.com/in/startupamit/',
           img: '/assets/team/amit-singh.jpg'
         }
 
@@ -212,7 +211,7 @@ const data = {
           company: 'LLC',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/sameer-gupta-a86a8410/',
           img: '/assets/team/sameer-gupta.jpg'
         },
         {
@@ -221,7 +220,7 @@ const data = {
           company: 'Smart Air Filter',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/jaykannaiyan/',
           img: '/assets/team/jay-kannaiyan.jpg'
         },
         {
@@ -230,7 +229,7 @@ const data = {
           company: 'New Energy Nexus',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/nalinag/',
           img: '/assets/team/naleen-agarwal.jpg'
         },
         {
@@ -239,7 +238,7 @@ const data = {
           company: 'Innovation Consultant',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/namrata-mehta-53696640/',
           img: '/assets/team/namrata-mehta.jpg'
         },
         {
@@ -248,7 +247,7 @@ const data = {
           company: 'NerdWallet',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/ghoshbhaskar/',
           img: '/assets/team/bhaskar-ghosh.jpg'
         },
         {
@@ -257,7 +256,7 @@ const data = {
           company: 'Juxt Smart Mandate',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/mrutyunjay/',
           img: '/assets/team/mritunjay-mishra.jpg'
         },
         {
@@ -275,7 +274,7 @@ const data = {
           company: 'Blume Ventures',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/arpit105/',
           img: '/assets/team/arpit-agarwal.jpeg'
         },
         {
@@ -284,7 +283,7 @@ const data = {
           company: 'The Growth Labs',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/prajaktraut/',
           img: '/assets/team/prajakt-raut.jpeg'
         },
         {
@@ -293,7 +292,7 @@ const data = {
           company: 'Truelancer.com',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/dipeshgarg/',
           img: '/assets/team/dipesh-garg.jpg'
         },
         {
@@ -302,7 +301,7 @@ const data = {
           company: 'FrogIdeas',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/jatinmodi/',
           img: '/assets/team/jatin-modi.jpg'
         },
         {
@@ -311,7 +310,7 @@ const data = {
           company: 'Corporate Marketing, HCL Tech',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/apurvachamaria/',
           img: '/assets/team/apurva-chamaria.jpg'
         },
         {
@@ -320,7 +319,7 @@ const data = {
           company: 'The Remote Life',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/nishchaldua/',
           img: '/assets/team/nischal-dua.jpg'
         },
         {
@@ -329,7 +328,7 @@ const data = {
           company: 'NetApp',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/drashishmehra/',
           img: '/assets/team/ashish-mehra.jpg'
         },
         {
@@ -338,7 +337,7 @@ const data = {
           company: 'Marketing at Tact',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/amitpande/',
           img: '/assets/team/amit-pande.jpg'
         },
         {
@@ -356,7 +355,7 @@ const data = {
           company: 'Design For Use',
           fb: '',
           twitter: '',
-          linkedIn: '',
+          linkedIn: 'https://www.linkedin.com/in/nishj/',
           img: '/assets/team/nishant-jain.jpg'
         },
         {
