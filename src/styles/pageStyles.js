@@ -98,9 +98,9 @@ const TeamList = glamorous.ul({
 });
 
 const TeamListHeading = glamorous.h2({
-  fontSize: Config.fontSizes.h2,
+  fontSize: Config.fontSizes.h2.screen,
   fontWeight: 500,
-  margin: '100px 0 30px'
+  margin: '100px 0 80px'
 });
 
 const TeamMemberName = glamorous.h5({

@@ -3,6 +3,7 @@ import {Card, Cards, Space} from '../styles/media';
 import {data} from '../content/data';
 class FeatureCards extends Component {
   render () {
+    let createMarkup = (line) => ({__html: line});
     return (
       <Space mtL='50' mtS='50'>
         <Cards>
@@ -10,7 +11,7 @@ class FeatureCards extends Component {
             data.cards.map(function (line) {
               return (
                 <Card>
-                  <p>{line}</p>
+                  <p dangerouslySetInnerHTML={createMarkup(line)} />
                 </Card>
               );
             })

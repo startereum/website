@@ -6,12 +6,12 @@ import {data} from '../content/data';
 
 class Team extends Component {
   render () {
-    function getSocialLinks(member) {
+    function getSocialLinks (member) {
       return (<div>
         {(member.fb !== '') ? <SocialIcon target='_blank' href={member.fb} type='fb' /> : ''}
         {(member.twitter !== '') ? <SocialIcon target='_blank' href={member.twitter} type='twitter' /> : ''}
         {(member.linkedIn !== '') ? <SocialIcon target='_blank' href={member.linkedIn} type='linkedin' /> : ''}
-      </div>)
+      </div>);
     }
     return (
       <Cont>
@@ -33,7 +33,7 @@ class Team extends Component {
                               {getSocialLinks(member)}
                             </div>
                             <img src={`${process.env.PUBLIC_URL + member.img}`} />
-                            </li>);
+                          </li>);
                         })
                       }
                     </TeamList>
